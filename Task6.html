@@ -7,6 +7,15 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <!-- Реализуйте конвертор валют. Пользователь вводит доллары, программа переводит в евро.
+    Курс валюты храните в константе. -->
+    <script>
+        const rate = 0.85;
+        var usd = 1;
+
+        usd = parseFloat(prompt("Введите количество долларов: ").replaceAll(',', '.'));
+        alert("Количество доллаорв в евро - " + eval(usd * rate));
+
+    </script>
 </body>
 </html>

@@ -7,6 +7,12 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <!-- Запросите у пользователя радиус окружности и выведите площадь такой окружности. -->
+    <script>
+        var radius = 1;
+
+        radius = parseFloat(prompt("Введите радиус окружности: ").replaceAll(',', '.'));
+        alert("Площадь окружности - " + eval(radius * radius * Math.PI));
+    </script>
 </body>
 </html>

@@ -7,6 +7,16 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <!-- Пользователь вводит сумму денег в кошельке и цену одной шоколадки. Программа выводит
+    сколько шоколадок может купить пользователь и сколько сдачи у него останется. -->
+    <script>
+        var money = 1;
+        var cost = 1;
+
+        money = parseFloat(prompt("Введите сумму денег в кошельке: ").replaceAll(',', '.'));
+        cost = parseFloat(prompt("Введите стоимость шоколадки: ").replaceAll(',', '.'));
+
+        alert("Вы сможете купить " + parseInt(eval(money / cost)) + " шоколадок. Ваша сдача - " + parseFloat(money - parseInt(money / cost) * cost));
+    </script>
 </body>
 </html>

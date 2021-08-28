@@ -7,6 +7,23 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <!-- Запросите у пользователя трёхзначное число и выведите его задом наперёд. 
+    Для решения задачи вам понадобится оператор % (остаток от деления). -->
+    <script>
+        var normalNum = 100;
+        
+        do
+        {
+            normalNum = parseInt(prompt("Введите трёхзначное число: "));
+        }
+        while (normalNum < 100 || normalNum > 999);
+
+        var reverseNum = "";
+        reverseNum += parseInt((normalNum % 100) % 10);
+        reverseNum += parseInt((normalNum % 100) / 10);
+        reverseNum += parseInt(normalNum / 100);
+
+        alert("Число задом наперёд - " + reverseNum);
+    </script>
 </body>
 </html>
